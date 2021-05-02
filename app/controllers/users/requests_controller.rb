@@ -37,8 +37,7 @@ module Users
         user.assign_attributes({
           provider: "google_oauth2",
           uid: data["email"],
-          first_name: data["given_name"],
-          last_name: data["family_name"]
+          name: data["name"]
         })
       end
     end
